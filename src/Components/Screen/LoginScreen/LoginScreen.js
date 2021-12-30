@@ -67,7 +67,7 @@ const LoginScreen = ({ navigation }) => {
           onPress={handleLogIn}
           buttonStyle={{
             borderRadius: 5,
-            backgroundColor: "blue",
+            backgroundColor: "salmon",
             width: "70%",
             marginLeft: 50,
           }}
@@ -80,7 +80,7 @@ const LoginScreen = ({ navigation }) => {
           onPress={() => navigation.navigate("RegisterScreen")}
           buttonStyle={{
             borderRadius: 5,
-            backgroundColor: "purple",
+            backgroundColor: "violet",
             width: "70%",
             marginTop: 80,
             marginLeft: 50,

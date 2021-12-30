@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React, { useRef, useEffect } from "react";
 import { Animated, Button, Text, View } from "react-native";
 import { ImageBackground } from "react-native";
-import Foundation from "react-native-vector-icons/Foundation";
+import Entypo from "react-native-vector-icons/Entypo";
 
 const FadeInView = (props) => {
   const navigation = useNavigation();
@@ -72,11 +72,11 @@ export default () => {
           onPress={() => navigation.navigate("BottomNavigator")}
           title="NEXT"
           icon={
-            <Foundation
+            <Entypo
               style={{ marginRight: 9 }}
-              name="next"
+              name="forward"
               size={25}
-              color="black"
+              color="white"
             />
           }
         />

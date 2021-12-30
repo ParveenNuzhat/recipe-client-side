@@ -38,11 +38,11 @@ const AddRecipe = ({ navigation }) => {
         <Text
           h1
           style={{
-            marginTop: 60,
+            marginTop: 80,
             fontSize: 30,
-            marginLeft: 12,
-            backgroundColor: "skyblue",
+            // backgroundColor: "aqua",
             color: "white",
+            textAlign: "center",
           }}
         >
           Add New Recipe
@@ -77,10 +77,11 @@ const AddRecipe = ({ navigation }) => {
         <Button
           onPress={handleSubmit}
           buttonStyle={{
-            backgroundColor: "purple",
+            backgroundColor: "violet",
             borderRadius: 10,
-            width: "30%",
-            marginLeft: 100,
+            width: "70%",
+            marginTop: 30,
+            marginLeft: 50,
           }}
           title="Add Recipe"
         />

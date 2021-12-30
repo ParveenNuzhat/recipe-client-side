@@ -22,15 +22,15 @@ const HomeScreen = ({ navigation }) => {
   };
   return (
     <ScrollView style={styles.main}>
-      <View style={{ marginTop: 100, marginLeft: 60, marginBottom: 40 }}>
+      <View style={{ marginTop: 60, marginLeft: 60, marginBottom: 40 }}>
         <Text h1 style={{ fontSize: 20 }}>
           {" "}
-          userEmail: {auth.currentUser.email}
+          {/* userEmail: {auth.currentUser.email} */}
         </Text>
       </View>
       <Button
         onPress={signOutHandle}
-        buttonStyle={{ backgroundColor: "", width: "70%" }}
+        buttonStyle={{ backgroundColor: "violet", width: "50%" }}
         title="Log out"
       />
 
@@ -44,13 +44,13 @@ const HomeScreen = ({ navigation }) => {
         >
           <View style={[styles.child, { backgroundColor: "pink" }]}>
             <Image
-              style={{ width: 390, height: 340 }}
+              style={{ width: 390, height: 350 }}
               source={require("../../../Images/2.jpg")}
             />
             <Text
               style={{
-                // marginTop: 20,
-                marginBottom: 100,
+                paddingTop: 20,
+                marginBottom: 120,
                 fontSize: 25,
                 marginLeft: 20,
               }}
@@ -60,19 +60,33 @@ const HomeScreen = ({ navigation }) => {
           </View>
           <View style={[styles.child, { backgroundColor: "thistle" }]}>
             <Image
-              style={{ width: 390, height: 340 }}
+              style={{ width: 390, height: 350 }}
               source={require("../../../Images/3.jpg")}
             />
-            <Text style={{ marginBottom: 100, fontSize: 25, marginLeft: 20 }}>
+            <Text
+              style={{
+                paddingTop: 20,
+                marginBottom: 120,
+                fontSize: 25,
+                marginLeft: 20,
+              }}
+            >
               A balanced diet is a cookie in each hand
             </Text>
           </View>
           <View style={[styles.child, { backgroundColor: "skyblue" }]}>
             <Image
-              style={{ width: 390, height: 340 }}
+              style={{ width: 390, height: 350 }}
               source={require("../../../Images/4.jpg")}
             />
-            <Text style={{ marginBottom: 100, fontSize: 25, marginLeft: 20 }}>
+            <Text
+              style={{
+                paddingTop: 20,
+                marginBottom: 120,
+                fontSize: 25,
+                marginLeft: 20,
+              }}
+            >
               People who love to eat are always the best people
             </Text>
           </View>
@@ -86,9 +100,9 @@ const { width } = Dimensions.get("window");
 const styles = StyleSheet.create({
   main: {
     height: "50%",
-    backgroundColor: "white",
+    backgroundColor: "grey",
   },
-  container: { flex: 1, top: 10 },
+  container: { flex: 1, top: 20 },
   child: { width, justifyContent: "center" },
   text: { fontSize: width * 0.5, textAlign: "center" },
   // image: { width: "100%" },

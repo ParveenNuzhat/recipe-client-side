@@ -47,7 +47,7 @@ const RegisterScreen = ({ navigation }) => {
         <Button
           onPress={() => registerHandle()}
           buttonStyle={{
-            backgroundColor: "purple",
+            backgroundColor: "violet",
             borderRadius: 10,
             width: "70%",
             marginLeft: 50,
@@ -57,7 +57,7 @@ const RegisterScreen = ({ navigation }) => {
         <TouchableOpacity onPress={navigation.navigate("RegisterScreen")}>
           <Button
             buttonStyle={{
-              backgroundColor: "indigo",
+              backgroundColor: "salmon",
               borderRadius: 10,
               width: "70%",
               marginLeft: 50,

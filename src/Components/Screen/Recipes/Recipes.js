@@ -64,17 +64,21 @@ const Recipes = ({ navigation }) => {
           <View>
             <Text style={{ fontSize: 15 }}>
               {" "}
-              <Text style={{ fontSize: 20, color: "purple" }}>
+              <Text
+                style={{ fontSize: 20, color: "magenta", fontWeight: "bold" }}
+              >
                 Recipe:
               </Text>{" "}
-              {item.recipeName}
+              {item.title}
             </Text>
           </View>
 
           <View>
             <Text style={{ fontSize: 15 }}>
               {" "}
-              <Text style={{ fontSize: 20, color: "purple" }}>
+              <Text
+                style={{ fontSize: 20, color: "magenta", fontWeight: "bold" }}
+              >
                 Description:{" "}
               </Text>
               {item.description}
@@ -118,7 +122,7 @@ const Recipes = ({ navigation }) => {
             >
               <Button
                 buttonStyle={{
-                  backgroundColor: "purple",
+                  backgroundColor: "violet",
                   width: "60%",
                   marginLeft: "15%",
                 }}
@@ -131,13 +135,14 @@ const Recipes = ({ navigation }) => {
               h1
               style={{
                 marginTop: 50,
-                fontSize: 30,
-                marginLeft: 12,
+                fontSize: 25,
+                padding: 10,
+                textAlign: "center",
                 backgroundColor: "indigo",
                 color: "white",
               }}
             >
-              Recipe Collection{" "}
+              Delicious yet Healthy Recipe{" "}
             </Text>
             <FlatList
               style={{ marginTop: 50, marginBottom: 10 }}
