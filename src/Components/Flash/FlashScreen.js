@@ -1,7 +1,8 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { useRef, useEffect } from "react";
-import { Animated, Text, View } from "react-native";
+import { Animated, Button, Text, View } from "react-native";
 import { ImageBackground } from "react-native";
+import Foundation from "react-native-vector-icons/Foundation";
 
 const FadeInView = (props) => {
   const navigation = useNavigation();
@@ -34,6 +35,7 @@ const FadeInView = (props) => {
 
 // You can then use your `FadeInView` in place of a `View` in your components:
 export default () => {
+  const navigation = useNavigation();
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <FadeInView
@@ -65,6 +67,19 @@ export default () => {
             Explored
           </Text>
         </ImageBackground>
+        <Button
+          buttonStyle={{ fontsize: 30 }}
+          onPress={() => navigation.navigate("BottomNavigator")}
+          title="NEXT"
+          icon={
+            <Foundation
+              style={{ marginRight: 9 }}
+              name="next"
+              size={25}
+              color="black"
+            />
+          }
+        />
       </FadeInView>
     </View>
   );
