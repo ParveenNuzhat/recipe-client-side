@@ -115,7 +115,16 @@ const Recipes = ({ navigation }) => {
           <View style={{ marginTop: 50 }}>
             <TouchableOpacity
               onPress={() => navigation.navigate("BottomNavigator")}
-            ></TouchableOpacity>
+            >
+              <Button
+                buttonStyle={{
+                  backgroundColor: "purple",
+                  width: "60%",
+                  marginLeft: "15%",
+                }}
+                title="Back To Previous Page"
+              />
+            </TouchableOpacity>
           </View>
           <View>
             <Text
